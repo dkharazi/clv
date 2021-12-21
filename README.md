@@ -20,7 +20,17 @@ There are many use-cases for CLV to be used across any type of business. The fol
 
 # Modeling CLV
 
+- Most of CLV modeling can be achieved stochastically using RFM features
+  - CLV consists of two estimates using two different models
+  - BG/NBD for order frequency estimates
+  - Gamma-Gamma for average spend estimates
+- ML algorithms, like boosting and RF, can do just as good of a job, but may offer less functionality
+- Accuracy chart illustations
 
+# Segmenting with CLV
+- Most customer segments should be segmented based on RFM features, churn estimates, or clv estimates
+- Then, profiled later (e.g. channel profiles) to determine different channels with different purchasing behavior
+- Shouldn't really ever be done the other way around
 
 # CLV with RFM Analysis
 - [Wharton Talk about Computing CLV with RFM Features](https://www.youtube.com/watch?v=guj2gVEEx4s&ab_channel=FirstMarkCapital)
