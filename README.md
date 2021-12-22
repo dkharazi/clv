@@ -102,6 +102,7 @@ Again, for a deeper dive into modeling customer behavior for both transactional 
 - FCF = (R(1 − VC) − FC − CAC × A)(1 − TR)
 - FCF is future cash flows
 - Here, R is weekly revenue
+  - This can be estimated by calculating CLV for all customers then summing it up
 - Here, VC is variable costs
 - Here, FC is fixed costs
 - Here, CAC is customer acquisition cost per customer
