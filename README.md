@@ -9,9 +9,11 @@ Typically, companies will make sure their cost of acquiring a customer (or CAC) 
 - Since CLV is an estimate, we should be estimating the future cost of acquiring a customer too
 
 Why it's important to rely on CLV instead of historical sales:
+
 *custom pic of churned customer and new customer*
 
 How CLV can differ across different customers:
+
 *pic from etsy*
 
 
