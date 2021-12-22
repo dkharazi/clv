@@ -14,7 +14,7 @@ For example, customer 1 and customer 2 have very different purchasing behaviors 
 
 ![CLV Illustration 1](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv1.svg)
 
-Why it's important to rely on CLV instead of historical sales:
+Regarding the third principle, estimating the value of our customers solely based on historical sales shouldn't be our main focus. Instead, it's more interesting to focus on CLV, since it's a future-looking estimate of spend, instead of historical sales. To illustrate this point, notice how customer 1 and customer 2 have different order recencies in the illustration below. More specifically, customer 1 has more purchases compared to customer 2 historically, but customer 2 has purchased more frequently and recently compared to customer 1. Even though both of these customers may be considered high value customers, customer 2 has a higher CLV if we regained our power to look into the future at each customer's actual purchases. If our CLV estimates are accurate enough, we can use our CLV estimates to measure the value of our acquired customers, rather than the hisorical spend of those customers.
 
 ![CLV Illustration 2](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv2.svg)
 
