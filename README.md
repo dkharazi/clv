@@ -53,14 +53,14 @@ There are many use-cases for CLV to be used across any type of business. The fol
 Repeat purchasers are typically those high-value customers based on CLV estimates. In general, there are sic metrics reflecting repeat-purchase patterns:
 - `AU:` Number of active users
 - `HAU:` Number of heavy active users
+- `F:` Average frequency of orders from active users
 - `RR:` Rate of repeat customers
 - `RBPO:` Percentage of orders from repeat buyers
 - `RBPC:` Percentage of customers who are repeat buyers
-- `F:` Average frequency of orders from active users
 
-Here, `AU` represents the number of customers who've placed at least 1 order in the current year, whereas `HAU` represents the number of customers who've placed at least 2 orders in the current year. Internally, these thresholds act as a good starting points across different types of companies, but could be adjusted based on what a company considers a *heavy active user*.
+Here, `AU` represents the number of customers who've placed at least 1 order in the current year, whereas `HAU` represents the number of customers who've placed at least 2 orders in the current year. Internally, these thresholds act as a good starting points across different types of companies, but could be adjusted based on what a company considers a *heavy active user*. The `F` metric represents the average orders placed by active users in the current year.
 
-The `RR` metric represents the percentage of the previous year's buyers who buy again in the current year, relative to all of the previous year's buyers. On a similar note, `RBPO` represents the percentage of the current year's orders from customers with an order in the previous year, relative to all of the current year's orders. Whereas, the `RBPC` metric represents the percentage of of the current year's buyers with an order in the previous year, relative to all of the current year's buyers. Lastly, `F` represents the average orders placed by active users in the current year.
+The `RR` metric represents the percentage of the previous year's buyers who buy again in the current year, relative to all of the previous year's buyers. On a similar note, `RBPO` represents the percentage of the current year's orders from customers with an order in the previous year, relative to all of the current year's orders. Whereas, the `RBPC` metric represents the percentage of of the current year's buyers with an order in the previous year, relative to all of the current year's buyers.
 
 For more information about what CLV-related metrics can be useful for spotting high-value customers, refer to [Dan McCarthy's slides from his presentation at Wharton](https://scientistcafe.com/CIRUG/2017_07_24ASA_TalkDanMcCarthy.pdf). For a deeper understanding of the math behind these metrics and examples of companies using these metrics in practice, refer to [McCarthy and Fader's paper](https://deliverypdf.ssrn.com/delivery.php?ID=217116104122089025069125121097076103121046070053091056099116021109091027113116024081057056103059050003021087120021001116093091000085032086058068011118113065000099106025080050118126124103092083099108005018031018083106115029070123004010092120067092069115&EXT=pdf&INDEX=TRUE).
 
