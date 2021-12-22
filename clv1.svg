@@ -30,9 +30,9 @@
      inkscape:window-height="762"
      id="namedview137"
      showgrid="false"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="511.2382"
-     inkscape:cy="329.51176"
+     inkscape:zoom="0.5"
+     inkscape:cx="649"
+     inkscape:cy="236"
      inkscape:window-x="54"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
@@ -355,20 +355,20 @@
                      style="fill:none;stroke:#000000;stroke-width:1.57007503;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                   <text
                      xml:space="preserve"
-                     style="font-style:normal;font-weight:normal;font-size:7.75443px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                     x="-120.49057"
+                     style="font-style:normal;font-weight:normal;font-size:6.09276px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+                     x="-112.18225"
                      y="270.12891"
                      id="text987"><tspan
                        id="tspan885"
                        sodipodi:role="line"
-                       x="-120.49057"
+                       x="-112.18225"
                        y="270.12891"
-                       style="font-weight:bold;font-size:7.75443px;stroke-width:0.264583">Who has a higher CLV?...</tspan><tspan
+                       style="font-weight:bold;font-size:6.09276px;stroke-width:0.264583">Who has a higher CLV?...</tspan><tspan
                        sodipodi:role="line"
-                       x="-120.49057"
-                       y="279.82193"
-                       style="font-weight:bold;font-size:7.75443px;stroke-width:0.264583"
-                       id="tspan13328">...Customer 1</tspan></text>
+                       x="-112.18225"
+                       y="277.74484"
+                       style="font-weight:bold;font-size:6.09276px;stroke-width:0.264583"
+                       id="tspan13328">...it's Customer 1</tspan></text>
                   <circle
                      r="2.5135417"
                      cy="219.65157"
