@@ -3,12 +3,20 @@
 In most cases, customer lifetime value (or CLV) represents how much a customer is worth (maybe in USD) over their entire lifetime with the company. Some companies will assign a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
 
 Typically, companies will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. For example, a company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong include the following:
-- Since customers behave differently, not all customers should have the same CLV
-- Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
-- Since current sales have already happened, we should be interested in the future spend of a customer
-- Since CLV is an estimate, we should be estimating the future cost of acquiring a customer too
+1. Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
+2. Since customers behave differently, not all customers should have the same CLV
+3. Since current sales have already happened, we should be interested in the future spend of a customer
+4. Since CLV is an estimate, we should be estimating the future cost of acquiring a customer too
 
-Regarding the first principle, an average CLV shouldn't be generalized across all customers. There is plenty of [evidence of customer heterogeneity](http://brucehardie.com/papers/022/fader_hardie_mksc_10.pdf), meaning we shouldn't assume customers are all the same. In other words, we shouldn't assume each customer's CLV is equal to the same average. Instead, we should assume they all have different values.
+To touch on the first point, estimates of future revenue can be decomposed into four general components directly related to CLV estimates. Specifically, future revenue (or estimated CLV) can be decomposed into the following components:
+- How many customers will we acquire?
+- How long will those acquired customers stay with us?
+- How many transactions will those customers make over that horizon?
+- How valuable will those transactions be?
+
+To be specific, calculating how long acquired customers will stay with us directly relates to [survival analysis](https://lifelines.readthedocs.io/en/latest/Survival%20Analysis%20intro.html). Then, calculating the number of orders made by customers during their lifetimes involves computing order frequency estimates using a Pareto/NBD or BG/NBD model. Lastly, calculating the value of customers over their lifetimes involves computing the average value of transactions using a Gamma-Gamma submodel. By adding up all of these components, we can calculate customer-level CLS estimates as the present value of the expected sum of discounted cash flows (DCF).
+
+Regarding the second principle, an average CLV shouldn't be generalized across all customers. There is plenty of [evidence of customer heterogeneity](http://brucehardie.com/papers/022/fader_hardie_mksc_10.pdf), meaning we shouldn't assume customers are all the same. In other words, we shouldn't assume each customer's CLV is equal to the same average. Instead, we should assume they all have different values.
 
 For example, customer 1 and customer 2 have very different purchasing behaviors based on their order recency and frequency in the illustration below. Notice, customer 2 has a much higher likelihood of churning compared to customer 1. If we have the power of looking into the future at each customer's actual purchases, then we'll see customer 1 should have a higher estimated CLV compared to customer 2. This point should help illustrate how each customer should be treated differently with a different estimated CLV.
 
