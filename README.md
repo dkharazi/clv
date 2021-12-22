@@ -96,3 +96,15 @@ Generally, both models are used to model non-contractual purchasing behavior of 
 The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
 
 Again, for a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations).
+
+# Customer-Based Corporate Valuations using CLV
+
+- FCF = (R(1 − VC) − FC − CAC × A)(1 − TR)
+- FCF is future cash flows
+- Here, R is weekly revenue
+- Here, VC is variable costs
+- Here, FC is fixed costs
+- Here, CAC is customer acquisition cost per customer
+- Here, A is gross acquisitions
+- Here, TR is tax rate
+
