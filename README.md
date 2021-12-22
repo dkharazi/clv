@@ -96,13 +96,3 @@ Generally, both models are used to model non-contractual purchasing behavior of 
 The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
 
 Again, for a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations).
-
-# Segmenting with CLV
-
-- Most customer segments should be segmented based on RFM features, churn estimates, or clv estimates
-- Then, profiled later (e.g. channel profiles) to determine different channels with different purchasing behavior
-- Shouldn't really ever be done the other way around
-- [Google Talk about Segmenting CLV](https://www.youtube.com/watch?v=0iLQCNYdNb4&ab_channel=TalksatGoogle)
-- Pic of cohorting by year customers were acquired
-- Cross-sell vs up-sell
-- Minute 25:50 for Tactical Approach vs. Targeted Customers
