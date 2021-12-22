@@ -5,7 +5,7 @@
    viewBox="0 0 300 120"
    height="120mm"
    width="300mm"
-   sodipodi:docname="clv2.svg"
+   sodipodi:docname="clv1.svg"
    inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
    inkscape:export-filename="/Users/dkhara/Documents/customer-centricity/clv2.svg"
    inkscape:export-xdpi="96"
@@ -30,9 +30,9 @@
      inkscape:window-height="762"
      id="namedview137"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="527.5"
-     inkscape:cy="266"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="511.2382"
+     inkscape:cy="329.51176"
      inkscape:window-x="54"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
@@ -368,13 +368,13 @@
                        x="-120.49057"
                        y="279.82193"
                        style="font-weight:bold;font-size:7.75443px;stroke-width:0.264583"
-                       id="tspan13328">...Customer 2</tspan></text>
+                       id="tspan13328">...Customer 1</tspan></text>
                   <circle
                      r="2.5135417"
                      cy="219.65157"
-                     cx="-48.938545"
+                     cx="-44.784389"
                      id="circle1129"
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0.00000003;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:3e-08;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                   <circle
                      r="2.5135417"
                      cy="219.65157"
@@ -388,15 +388,9 @@
                      cy="219.65157"
                      r="2.5135417" />
                   <circle
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0.00000003;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:3e-08;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                      id="circle1149"
                      cx="-71.669189"
-                     cy="219.65157"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle1189"
-                     cx="-3.4772499"
                      cy="219.65157"
                      r="2.5135417" />
                   <circle
@@ -449,95 +443,41 @@
                      id="path881"
                      inkscape:connector-curvature="0" />
                   <circle
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                      id="circle19572"
-                     cx="5.6389737"
+                     cx="-59.165878"
                      cy="244.57652"
                      r="2.5135417" />
                   <circle
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                      id="circle19574"
-                     cx="-2.6693408"
+                     cx="-67.47419"
                      cy="244.57652"
                      r="2.5135417" />
                   <circle
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
                      id="circle19576"
-                     cx="-10.977655"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19578"
-                     cx="15.643512"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19580"
-                     cx="23.951826"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19582"
-                     cx="32.260139"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19584"
-                     cx="40.568451"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19586"
-                     cx="48.876762"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19588"
-                     cx="57.185074"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19590"
-                     cx="65.493385"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19592"
-                     cx="73.801704"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19594"
-                     cx="82.110023"
-                     cy="244.57652"
-                     r="2.5135417" />
-                  <circle
-                     style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                     id="circle19596"
-                     cx="90.418343"
+                     cx="-75.782486"
                      cy="244.57652"
                      r="2.5135417" />
                   <circle
                      r="2.5135417"
                      cy="219.65157"
-                     cx="-26.207895"
+                     cx="-17.89958"
                      id="circle19818"
-                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0.00000003;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:3e-08;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                   <circle
                      r="2.5135417"
                      cy="219.65157"
                      cx="66.677299"
                      id="circle19820"
                      style="opacity:1;fill:none;fill-opacity:1;stroke:#ff8080;stroke-width:0.785038;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+                  <circle
+                     style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                     id="circle1203"
+                     cx="-50.857567"
+                     cy="244.57652"
+                     r="2.5135417" />
                 </g>
               </g>
             </g>
