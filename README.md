@@ -84,14 +84,14 @@ Either the BG/NBD model or the Pareto/NBD model can be used to estimate the orde
 
 Generally, both models are used to model non-contractual purchasing behavior of customers. The BG/NBD model slightly adjusts the assumptions of the Pareto/NBD model in order to speed up estimation drastically. In particular, the BG/NBD model has the following assumptions:
 1. The number of orders made by an active customer follows a Poisson process with transaction rate λ
-  - Here, λ represents the expected number of transactions in a time interval
+- Here, λ represents the expected number of transactions in a time interval
 2. Each customer can have a different λ (i.e. transaction rates are heterogeneous across all customers)
-  - Here, the heterogeneity in λ is assumed to follow a Gamma distribution
+- Here, the heterogeneity in λ is assumed to follow a Gamma distribution
 3. After each purchase, each customer has an α probability of churning (i.e. never buying again)
-  - Here, α is assumed to follow a Geometric distribution
-  - Roughly, a customer's probability of churning decreases as a customer places more orders
+- Here, α is assumed to follow a Geometric distribution
+- Roughly, a customer's probability of churning decreases as a customer places more orders
 4. Each customer can have a different α (i.e. probabilities of churning are heterogenous across all customers)
-  - Here, the heterogeneity in α is assumed to follow a Beta distribution
+- Here, the heterogeneity in α is assumed to follow a Beta distribution
 
 The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
 
