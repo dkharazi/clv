@@ -1,6 +1,11 @@
 # clv
 
-In most cases, customer lifetime value (or CLV) represents how much a customer is worth (maybe in USD) over their entire lifetime with the company. Some companies will assign a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
+In most cases, customer lifetime value (or CLV) represents how much a customer is worth (maybe in USD) over their entire lifetime with the company. Marketing departments spend much of their attention on tactical initiatives, such as who to target in an upcoming seasonal email campaign or how to allocate marketing budget across channels, which can be solved by marketing mix modeling. However, these should be thought of as secondary initiatives, where the primary initiative or ultimate objective should be to increase the value of the firm by:
+1. Improving the acquisition of new customers
+2. Improving the CLV of new and existing customers
+3. Decreasing the riskiness of the customer portfolio
+
+Marketing departments shouldn't lose sight of these higher-level, fundamental objectives. Some companies will fail to address these objectives by assigning a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
 
 Typically, companies will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. For example, a company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong relate to the following principles:
 1. Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
