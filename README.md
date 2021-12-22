@@ -1,6 +1,7 @@
 # clv
 
-In most cases, customer lifetime value (or CLV) represents how much a customer is worth (maybe in USD) over their entire lifetime with the company. Marketing departments spend much of their attention on tactical initiatives, such as who to target in an upcoming seasonal email campaign or how to allocate marketing budget across channels, which can be solved by marketing mix modeling. However, these should be thought of as secondary initiatives, where the primary initiative or ultimate objective should be to increase the value of the firm by:
+In most cases, customer lifetime value (or CLV) represents the present value of
+the future cash flows attributed to a customer relationship, or how much a customer is worth (maybe in USD) over their entire lifetime with a company. Marketing departments spend much of their attention on tactical initiatives, such as who to target in an upcoming seasonal email campaign or how to allocate marketing budget across channels, which can be solved by marketing mix modeling. However, these should be thought of as secondary initiatives, where the primary initiative or ultimate objective should be to increase the value of the firm by:
 1. Improving the acquisition of new customers
 2. Improving the CLV of new and existing customers
 3. Decreasing the riskiness of the customer portfolio
@@ -59,7 +60,7 @@ There are many use-cases for CLV to be used across any type of business. The fol
 
 # Reporting CLV-Related Metrics
 
-Repeat purchasers are typically those high-value customers based on CLV estimates. In general, there are sic metrics reflecting repeat-purchase patterns:
+Repeat purchasers are typically those high-value customers based on CLV estimates. In general, there are six metrics reflecting repeat-purchase patterns:
 - `AU:` Number of active users
 - `HAU:` Number of heavy active users
 - `F:` Average frequency of orders from active users
@@ -75,13 +76,13 @@ For more information about what CLV-related metrics can be useful for spotting h
 
 # Modeling CLV
 
-- Most of CLV modeling can be achieved stochastically using RFM features
-  - In most cases, recency most important, then frequency, then monetary
-  - CLV consists of two estimates using two different models
-  - BG/NBD for order frequency estimates
-  - Gamma-Gamma for average spend estimates
-- ML algorithms, like boosting and RF, can do just as good of a job, but may offer less functionality
-- Accuracy chart illustations
+Generating accurate revenue projections plays an important role at any business, and CLV should be included in these estimates, especially since every dollar of revenue that a company generates must come from its customers. Typically, financial professionals forecast business revenues and expenses using time-series models. This may be a sensible modeling methodology when customer data is unavailable to the firm. However, forecasting accuracy can be improved by decomposing customer-driven financial line items into their constituent components, estimating models and forecasting these parts into the future, then aggregating these components back together again to form projections of future customer-driven financial line items, rather than estimates based solely on historical sales. In the end, revenue forecasts should include these components whenever customer data is available.
+
+In most cases, RFM features (recency, frequency, spend, and tenure) are sufficient in predicting CLV estimates stochastically for customers. From personal experience, a model with these RFM features will achieve a nearly identical accuracy compared to that same model including additional demographic, engagement, and other sets of features. Here, CLV is calculated using DCF as a combination of two estimates: estimated average spend of a customer and estimated number of orders over a customer's lifetime. The average spend of a customer is estimated using a BG/NBD model, and the order frequency of a customer is estimated using a Gamma-Gamma submodel.
+
+The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
+
+Again, for a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations).
 
 # Segmenting with CLV
 
