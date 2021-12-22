@@ -83,7 +83,9 @@ In most cases, RFM features (recency, frequency, spend, and tenure) are sufficie
 Either the BG/NBD model or the Pareto/NBD model can be used to estimate the order frequency of a customer, and both models employ the same constraints and only require 3 features: recency, frequency, and tenure features. The primary difference between these two models is that the BG/NBD model maps the survivorship curve to a beta-geometric distribution instead of a Pareto distribution. Specifically, the time to *dropout* (or churn) is modeled using the Pareto (or beta-geometric) timing model. For both models, repeat-purchasing behavior while active is modeled using the NBD (or negative binomial) counting model.
 
 Generally, both models are used to model non-contractual purchasing behavior of customers. The BG/NBD model slightly adjusts the assumptions of the Pareto/NBD model in order to speed up estimation drastically. In particular, the BG/NBD model has the following assumptions:
-- $\lambda$
+- The number of orders made by an active customer follows a Poisson process with transaction rate λ
+  - Here, λ represents the expected number of transactions in a time interval
+- Hello world
 
 The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
 
