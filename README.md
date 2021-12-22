@@ -2,13 +2,13 @@
 
 In most cases, customer lifetime value (or CLV) represents how much a customer is worth (maybe in USD) over their entire lifetime with the company. Some companies will assign a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
 
-Typically, companies will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. For example, a company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong include the following:
+Typically, companies will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. For example, a company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong relate to the following principles:
 1. Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
 2. Since customers behave differently, not all customers should have the same CLV
 3. Since current sales have already happened, we should be interested in the future spend of a customer
 4. Since CLV is an estimate, we should be estimating the future cost of acquiring a customer too
 
-To touch on the first point, estimates of future revenue can be decomposed into four general components directly related to CLV estimates. Specifically, future revenue (or estimated CLV) can be decomposed into the following components:
+To touch on the first principle, estimates of future revenue can be decomposed into four general components directly related to CLV estimates. Specifically, future revenue (or estimated CLV) can be decomposed into the following components:
 - How many customers will we acquire?
 - How long will those acquired customers stay with us?
 - How many transactions will those customers make over that horizon?
