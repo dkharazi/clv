@@ -10,7 +10,7 @@ Typically, companies will make sure their cost of acquiring a customer (or CAC) 
 
 Regarding the first principle, an average CLV shouldn't be generalized across all customers. There is plenty of [evidence of customer heterogeneity](http://brucehardie.com/papers/022/fader_hardie_mksc_10.pdf), meaning we shouldn't assume customers are all the same. In other words, we shouldn't assume each customer's CLV is equal to the same average. Instead, we should assume they all have different values.
 
-*pic from etsy*
+![CLV Illustration 1](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv2.svg)
 
 
 Why it's important to rely on CLV instead of historical sales:
