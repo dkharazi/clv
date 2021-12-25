@@ -120,5 +120,5 @@ For more information about the accuracy of this small set of customer-based corp
 - Here, A is gross acquisitions
 - Here, TR is tax rate
 
-For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx?dl=0). For an interesting high-level article outlining McCarthy's overall CBCV approach, refer to [this article](https://hbr.org/2020/01/how-to-value-a-company-by-analyzing-its-customers).
+For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For an interesting high-level article outlining McCarthy's overall CBCV approach, refer to [this article](https://hbr.org/2020/01/how-to-value-a-company-by-analyzing-its-customers).
 
