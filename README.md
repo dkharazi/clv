@@ -88,7 +88,7 @@ Either the BG/NBD model or the Pareto/NBD model can be used to estimate the orde
 Generally, both models are used to model non-contractual purchasing behavior of customers. The BG/NBD model slightly adjusts the assumptions of the Pareto/NBD model in order to speed up estimation drastically. In particular, the BG/NBD model has the following assumptions:
 - Each active customer has their own Poisson distribution with transaction rate λ
   - Here, λ represents the expected number of transactions in a time interval
-  - The number of orders made by a customer in a given time period (i.e. month, year, etc.) comes from this poisson distribution, where each day may produce a different value
+  - The number of orders made by a customer in a given time period (i.e. month, year, etc.) comes from this poisson distribution
 - Each customer can have a different λ (i.e. transaction rates are heterogeneous across all customers)
   - Here, the heterogeneity in λ is assumed to follow a Gamma distribution
 - After each purchase, each customer has an α probability of churning (i.e. never buying again)
@@ -97,7 +97,9 @@ Generally, both models are used to model non-contractual purchasing behavior of 
 - Each customer can have a different α (i.e. probabilities of churning are heterogenous across all customers)
   - Here, the heterogeneity in α is assumed to follow a Beta distribution
 
-To help illustrate these parameters, let's imagine every customer making repeat purchases has two coins. In particular, each customer flips a coin every day to see if they die or not (drop out coin). After a certain period, each customer flips their second coin to get the number of purchases they'll make in the next period.
+To help illustrate these parameters, let's imagine every customer (who are repeat purchases) has two coins. In particular, each customer flips a coin every day to see if they purchase or not (i.e. a purchase coin). After this first coin is flipped, each customer will flip their second coin. This second coin will decide whether they die or not (i.e. a drop-out coin). Once a customers flips heads on the die coin, then they will stop flipping both coins and exit the experiment.
+
+To tie in the model parameters with our analogy, the number of times our first coin (i.e. purchase coin) landed on heads (or the customer purchased) in a given period (e.g. month, year, etc.) is our transaction rate λ, which determines the shape of their own Poisson distribution. The heterogeneity in transaction rates across different customers follows a Gamma distribution. Each customer's second coin has a different probability α of landing on heads, or the customer dropping out and never buying again. Each customer's chance of dropping out is represented by their own α parameter, which determines the shape of their own Geometric distribution. The heterogeneity in drop-out probabilities across different customers follows a Beta distribution.
 
 The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
 
