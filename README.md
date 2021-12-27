@@ -70,7 +70,8 @@ There are many use-cases for CLV to be used across any type of business. The fol
 - Improving acquisitions of customer cohorts
 - Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
 
-# CLV-Related Metrics
+# Sample CLV-Related Metrics
+In the early stages of tracking customers' CLV, it's important to monitor certain metrics when focusing on customer acquisition, retention, and development. The following metrics are examples of useful metrics related to CLV, but there could be many more estimates:
 - Propensity to be acquired
 - Propensity to churn
 - Propensity to develop into a higher value customer
