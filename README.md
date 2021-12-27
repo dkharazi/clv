@@ -1,32 +1,41 @@
 # customer-centricity
 
 In most cases, customer lifetime value (or CLV) represents the present value of
-the future cash flows attributed to a customer relationship, or how much a customer is worth (maybe in USD) over their entire lifetime with a company. Marketing departments spend much of their attention on tactical initiatives, such as who to target in an upcoming seasonal email campaign or how to allocate marketing budget across channels, which can be solved by marketing mix modeling. However, these should be thought of as secondary initiatives, where the primary initiative or ultimate objective should be to increase the value of the firm by:
-1. Improving the acquisition of new customers
-2. Improving the CLV of new and existing customers
-3. Decreasing the riskiness of the customer portfolio
+the future cash flows attributed to a customer relationship, or how much a customer is worth (maybe in USD) over their entire lifetime with a company. Marketing departments spend much of their attention on tactical initiatives, such as who to target in an upcoming seasonal email campaign or how to allocate marketing budget across channels, which can be solved by marketing mix modeling. However, these factors should be thought of as secondary initiatives, where the primary initiative or ultimate objective should be to increase the value of the firm by:
+1. Improving the acquisition of new customers (e.g. number of newly acquired customers)
+2. Improving the CLV of newly, acquired customers
+3. Improving the CLV of existing, retained customers
+4. Decreasing the riskiness of the customer portfolio
 
 Marketing departments shouldn't lose sight of these higher-level, fundamental objectives. Some companies will fail to address these objectives by assigning a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
 
 # CLV Assumptions and Principles
 
-Companies typically will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. A company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong relate to the following principles:
-1. Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
-2. Since customers behave differently, not all customers should have the same CLV
-3. Since current sales have already happened, we should be interested in the future spend of a customer
-4. Since CLV is an estimate, we should be estimating the future cost of acquiring a customer too
+There is growing evidence that no customer is born the same, each with his or her own preferences, propensities, and potential. In the the [Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/), Peter Fader describes this idea of *customer goodness*, which specifically ties into this assumption and thinking that each customer is born with his or her own set of inherent propensities to engage in a campaign, purchase a certain product, etc. This set of baked-in propensities manifest themselves into customer preferences and translate into a potential value. By following this thinking, CLV can unlock many doors for a company, since we can start to understand how much a customer is likely to spend throughout their life cycle with our company.
 
-To touch on the first principle, estimates of future revenue can be decomposed into four general components directly related to CLV estimates. Specifically, future revenue (or estimated CLV) can be decomposed into the following components:
+In a non-contractual setting, CLV is always unknown and unobservable, since a customer never declares when he or she wants to churn. As a result, it is necessary to estimate each customer's CLV, which includes estimating metrics like future revenue, orders, etc. Estimates of future revenue can be decomposed into four general components directly related to the *acquisition part* of CLV estimates. Specifically, future revenue (or estimated CLV) can be decomposed into the following components:
 - How many customers will we acquire?
 - How long will those acquired customers stay with us?
 - How many transactions will those customers make over that horizon?
 - How valuable will those transactions be?
 
-To be specific, calculating how long acquired customers will stay with us directly relates to [survival analysis](https://lifelines.readthedocs.io/en/latest/Survival%20Analysis%20intro.html). Then, calculating the number of orders made by customers during their lifetimes involves computing order frequency estimates using a Pareto/NBD or BG/NBD model. Lastly, calculating the value of customers over their lifetimes involves computing the average value of transactions using a Gamma-Gamma submodel. By adding up all of these components, we can calculate customer-level CLS estimates as the present value of the expected sum of discounted cash flows (DCF).
+Similarly, estimates of future revenue can be decomposed into nearly identical components directly related to the *retention part* of CLV estimates. Specifically, future revenue (or estimated RLV) can be decomposed into the following components:
+- How must customers will be retained?
+- How long will those retained customers stay with us?
+- How many transactions will those customers make over that horizon?
+- How valuable will those transactions be?
+
+To be specific, calculating how long customers will stay with us directly relates to [survival analysis](https://lifelines.readthedocs.io/en/latest/Survival%20Analysis%20intro.html). Then, calculating the number of orders made by customers during their lifetimes involves computing order frequency estimates using a Pareto/NBD or BG/NBD model. Lastly, calculating the value of customers over their lifetimes involves computing the average value of transactions using a Gamma-Gamma submodel. By adding up all of these components, we can calculate customer-level CLS estimates as the present value of the expected sum of discounted cash flows (DCF).
+
+Companies typically will make sure their cost of acquiring a customer (or CAC) is less than that customer's lifetime value. A company could say *"I know the CLV of each customer for my business is $100, so that's the most I can spend to acquire them."* However, the obvious reasons for why this statement is wrong relate to the following principles:
+1. Since CLV is a forward-looking estimate, we should include confidence intervals for our CLV estimates
+2. Since customers behave differently, not all customers should have the same CLV
+3. When focusing on retention, we should be interested in the future spend of a customer, since current sales have already happened
+4. When focusing on acquisition, we should be estimating the future cost of acquiring a customer, since CLV is an estimate as well in a non-contractual setting
 
 Regarding the second principle, an average CLV shouldn't be generalized across all customers. There is plenty of [evidence of customer heterogeneity](http://brucehardie.com/papers/022/fader_hardie_mksc_10.pdf), meaning we shouldn't assume customers are all the same. In other words, we shouldn't assume each customer's CLV is equal to the same average. Instead, we should assume they all have different values.
 
-For example, customer 1 and customer 2 have very different purchasing behaviors based on their order recency and frequency in the illustration below. Notice, customer 2 has a much higher likelihood of churning compared to customer 1. If we have the power of looking into the future at each customer's actual purchases, then we'll see customer 1 should have a higher estimated CLV compared to customer 2. This point should help illustrate how each customer should be treated differently with a different estimated CLV.
+For example, customer 1 and customer 2 have very different purchasing behaviors based on their order recency and frequency in the illustration below. Notice, customer 2 has a much higher likelihood of churning compared to customer 1. If we gained the power of being able to see into the future and look at each customer's actual purchases, then we'll see customer 1 should have a higher estimated CLV compared to customer 2. This point should help illustrate how each customer should be treated differently with a different estimated CLV.
 
 ![CLV Illustration 1](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv1.svg)
 
@@ -36,7 +45,7 @@ Regarding the third principle, estimating the value of our customers solely base
 
 # Wayfair: a CLV Case Study 
 
-If our CLV estimates are accurate enough, we can use those CLV estimates to measure the value of our acquired customers across their lifetimes, rather than the hisorical spend of our customers. This is an important concept for determining whether our acquired customers should be considered high-value or low-value customers. For example, [Peter Fader](https://www.youtube.com/watch?v=0iLQCNYdNb4&ab_channel=TalksatGoogle) and [Daniel McCarthy](https://twitter.com/d_mccar/status/1376564874713702408) have both mentioned Wayfair's acquisitions are growing too fast without retaining repeat buyers or high-value customers. In other words, they're acquiring a lot of low-value customers, and they haven't established enough of a base of repeat buyers, who they can rely on when their acquisitions level off. As a result, their revenue is expected to drop once acquisitions reach their peak, which is illustrated in the following figure.
+If our CLV estimates are accurate enough, we can use those CLV estimates to measure the value of our acquired customers across their lifetimes, rather than the hisorical spend of our customers. This is an important concept for determining whether our acquired customers should be considered high-value or low-value customers. For example, [Peter Fader](https://www.youtube.com/watch?v=0iLQCNYdNb4&ab_channel=TalksatGoogle) and [Daniel McCarthy](https://twitter.com/d_mccar/status/1376564874713702408) have both mentioned Wayfair's acquisitions are growing too fast without retaining repeat-buyers or high-value customers. In other words, they're acquiring a lot of low-value customers, and they haven't established enough of a base of repeat buyers, who they can rely on when their acquisitions level off. As a result, their revenue is expected to drop once acquisitions reach their peak, which is illustrated in the following figure.
 
 ![Wayfair Acquisition Costs](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv3.png)
 
@@ -46,7 +55,7 @@ Those forecasts didn't account for the occurrence of the pandemic, causing acqui
 
 However, this doesn't solve their problem with retaining high-value customers and only puts off confronting this ongoing retention issue. Since 2019, Wayfair has [admitted to growing too fast in the past](https://www.bostonglobe.com/2020/02/28/business/wayfair-stock-takes-another-hit-amid-sales-slowdown/) and has carried out large-scale layoffs, while [raising increasing amounts of debt](https://chainstoreage.com/analysis-wayfair-has-failed-turn-over-new-leaf-net-loss-continues-rise) to fund their operating losses. For every growing company, acquisition must reach a peak and level off at some point. When that time comes, these companies must rely on its base of repeat buyers (or high-value customers) make decreases in acquisition seem unnoticeable.
 
-For most successful companies, there's enough of an established base of ongoing, repeat buyers after acquisitions level off. As an example, Amazon acquired and developed enough of their buyers to be high-value and repeat buyers, so slight decreases in their customer acquisition didn't impact their revenue.
+For most successful companies, there's enough of an established base of ongoing repeat-buyers after acquisitions level off. As an example, Amazon acquired and developed enough of their buyers to be high-value and repeat buyers, so slight decreases in their customer acquisition (after their peak) didn't impact their revenue.
 
 For a deeper understanding of the forecasts and underlying CLVs at Wayfair, refer to [McCarthy and Fader's paper](https://deliverypdf.ssrn.com/delivery.php?ID=217116104122089025069125121097076103121046070053091056099116021109091027113116024081057056103059050003021087120021001116093091000085032086058068011118113065000099106025080050118126124103092083099108005018031018083106115029070123004010092120067092069115&EXT=pdf&INDEX=TRUE). Refer to [these slides from Roberto Medri](http://cdn.oreillystatic.com/en/assets/1/event/85/Case%20Study_%20What_s%20a%20Customer%20Worth_%20Presentation.pdf) for a deeper, high-level explanation about customer lifetime value. For a lower-level understanding of CLV models and how they're built, refer to [this talk at Wharton by Peter Fader](https://www.youtube.com/watch?v=guj2gVEEx4s&ab_channel=FirstMarkCapital). Or, refer to [this talk at Google by Peter Fader](https://www.youtube.com/watch?v=0iLQCNYdNb4&ab_channel=TalksatGoogle) for illustrations of how we can target and apply separate customer targeting tactics on different CLV segments of customers.
 
@@ -54,12 +63,19 @@ For a deeper understanding of the forecasts and underlying CLVs at Wayfair, refe
 
 There are many use-cases for CLV to be used across any type of business. The following are only a few use-cases that can provide immediate impact to a company:
 - Valuating channels or cohorts of customers by comparing average CLV against average CAC for a particular acquisition channel or cohort of customers
-- Determine more meaningful customer segments based on unique purchasing behavior or CLV estimates
-- Design more forward-looking tests for determining changes in CLV or future lifts for cohorts
+- Determining more meaningful customer segments based on unique purchasing behavior or CLV estimates
+- Designing more forward-looking tests for determining changes in CLV or future lifts for cohorts
 - Applying more effective customer targeting strategies (i.e. premium offerings and loyalty programs) to low-value or high-value customers based on CLV
 - Improving retention of future customer cohorts
 - Improving acquisitions of customer cohorts
 - Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
+
+# CLV-Related Metrics
+- Propensity to be acquired
+- Propensity to churn
+- Propensity to develop into a higher value customer
+- Propensity to refer others
+- Propensity to respond to the right messages
 
 # Implementing CLV Models
 
@@ -103,7 +119,7 @@ for c in customers:
     CE = CE + c.CLV
 ```
 
-For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For slides about the high-level components included in these probabilistic CLV models, refer to [Hardie and Fader's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf). For more intuition behind the mathematical componented included in the models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf).
+For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For a granular summary and overview of customer equity and its relation to CLV, refer to [McCarthy's paper](https://deliverypdf.ssrn.com/delivery.php?ID=094105095110064008003086086022107024001033030064027066098109068088068009091005007071020045051127023056111099107027079081119064107001090050083103105083098093098104120036022056002073019080115123098125000029097094117122001072114003023119090007105085118119&EXT=pdf&INDEX=TRUE). For slides about the high-level components included in these probabilistic CLV models, refer to [Hardie and Fader's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf). For more intuition behind the mathematical componented included in the models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf).
 
 # Modeling CLV
 
