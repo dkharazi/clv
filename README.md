@@ -59,35 +59,7 @@ There are many use-cases for CLV to be used across any type of business. The fol
 - Applying more effective customer targeting strategies (i.e. premium offerings and loyalty programs) to low-value or high-value customers based on CLV
 - Improving retention of future customer cohorts
 - Improving acquisitions of customer cohorts
-- Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers 
-
-# Modeling CLV
-
-Generating accurate revenue projections plays an important role at any business, and CLV should be included in these estimates, especially since every dollar of revenue that a company generates must come from its customers. Typically, financial professionals forecast business revenues and expenses using time-series models. This may be a sensible modeling methodology when customer data is unavailable to the firm. However, forecasting accuracy can be improved by decomposing customer-driven financial line items into their constituent components, estimating models and forecasting these parts into the future, then aggregating these components back together again to form projections of future customer-driven financial line items, rather than estimates based solely on historical sales. In the end, revenue forecasts should include these components whenever customer data is available.
-
-In most cases, RFM features (recency, frequency, spend, and tenure) are sufficient in predicting CLV estimates stochastically for customers. From personal experience, a model with these RFM features will achieve a nearly identical accuracy compared to that same model including additional demographic, engagement, and other sets of features. Here, CLV is calculated using DCF as a combination of two estimates: estimated average spend of a customer and estimated number of orders over a customer's lifetime. The average spend of a customer is estimated using a BG/NBD model, and the order frequency of a customer is estimated using a Gamma-Gamma submodel.
-
-Either the BG/NBD model or the Pareto/NBD model can be used to estimate the order frequency of a customer, and both models employ the same constraints and only require 3 features: recency, frequency, and tenure features. The primary difference between these two models is that the BG/NBD model maps the survivorship curve to a beta-geometric distribution instead of a Pareto distribution. Specifically, the time to *dropout* (or churn) is modeled using the Pareto (or beta-geometric) timing model. For both models, repeat-purchasing behavior while active is modeled using the NBD (or negative binomial) counting model.
-
-Generally, both models are used to model non-contractual purchasing behavior of customers. The BG/NBD model slightly adjusts the assumptions of the Pareto/NBD model in order to speed up estimation drastically. In particular, the BG/NBD model has the following assumptions:
-- Each active customer has their own Poisson distribution with transaction rate λ
-  - Here, λ represents the expected number of transactions in a time interval
-  - The number of orders made by a customer in a given time period (i.e. month, year, etc.) comes from this poisson distribution
-- Each customer can have a different λ (i.e. transaction rates are heterogeneous across all customers)
-  - Here, the heterogeneity in λ is assumed to follow a Gamma distribution
-- After each purchase, each customer has an α probability of churning (i.e. never buying again)
-  - Here, α is assumed to follow a Geometric distribution
-  - Roughly, a customer's probability of churning decreases as a customer places more orders
-- Each customer can have a different α (i.e. probabilities of churning are heterogenous across all customers)
-  - Here, the heterogeneity in α is assumed to follow a Beta distribution
-
-To help illustrate these parameters, let's imagine every customer (who are repeat purchases) has two coins. In particular, each customer flips a coin every day to see if they purchase or not (i.e. a purchase coin). After this first coin is flipped, each customer will flip their second coin. This second coin will decide whether they die or not (i.e. a drop-out coin). Once a customers flips heads on the die coin, then they will stop flipping both coins and exit the experiment.
-
-To tie in the model parameters with our analogy, the number of times our first coin (i.e. purchase coin) landed on heads (or the customer purchased) in a given period (e.g. month, year, etc.) is our transaction rate λ, which determines the shape of their own Poisson distribution. The heterogeneity in transaction rates across different customers follows a Gamma distribution. Each customer's second coin has a different probability α of landing on heads, or the customer dropping out and never buying again. Each customer's chance of dropping out is represented by their own α parameter, which determines the shape of their own Geometric distribution. The heterogeneity in drop-out probabilities across different customers follows a Beta distribution.
-
-The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs for a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
-
-Again, for a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations). For high-level intuitions behind each parameter, refer to [this Medium article](https://towardsdatascience.com/predicting-customer-lifetime-value-with-buy-til-you-die-probabilistic-models-in-python-f5cac78758d9). For comprehensive descriptions of the parameters used in modeling CLV, refer to [Bruce Hardie's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf).
+- Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
 
 # Implementing CLV Models
 
@@ -132,4 +104,32 @@ for c in customers:
 ```
 
 For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For slides about the high-level components included in these probabilistic CLV models, refer to [Hardie and Fader's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf). For more intuition behind the mathematical componented included in the models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf).
+
+# Modeling CLV
+
+Generating accurate revenue projections plays an important role at any business, and CLV should be included in these estimates, especially since every dollar of revenue that a company generates must come from its customers. Typically, financial professionals forecast business revenues and expenses using time-series models. This may be a sensible modeling methodology when customer data is unavailable to the firm. However, forecasting accuracy can be improved by decomposing customer-driven financial line items into their constituent components, estimating models and forecasting these parts into the future, then aggregating these components back together again to form projections of future customer-driven financial line items. Typically, using these forward-looking, customer-based estimates is better than using estimates based solely on historical sales. In the end, revenue forecasts should include these components whenever customer data is available.
+
+In most cases, RFM features (recency, frequency, spend, and tenure) are sufficient in predicting CLV estimates stochastically for customers. From personal experience, a model with these RFM features will achieve a nearly identical accuracy compared to that same model including additional demographic, engagement, and other sets of features. Here, CLV is calculated using DCF as a combination of three estimates: estimated average spend of a customer, estimated probability of being alive for a customer, and estimated number of orders over a customer's lifetime. The average spend and churn probability of a customer is estimated using a BG/NBD model, and the order frequency of a customer is estimated using a Gamma-Gamma submodel.
+
+Either the BG/NBD model or the Pareto/NBD model can be used to estimate the order frequency or churn probability of a customer, and both models employ the same constraints and only require 3 features: recency, frequency, and tenure features. The primary difference between these two models is that the BG/NBD model maps the survivorship curve to a beta-geometric distribution instead of a Pareto distribution. Specifically, the time to *dropout* (or churn) is modeled using the Pareto (or beta-geometric) timing model. For both models, repeat-purchasing behavior while active is modeled using the NBD (or negative binomial) counting model.
+
+Generally, both models are used to model non-contractual purchasing behavior of customers. The BG/NBD model slightly adjusts the assumptions of the Pareto/NBD model in order to speed up estimation drastically. In particular, the BG/NBD model has the following assumptions:
+- Each active customer has their own Poisson distribution with transaction rate λ
+  - Here, λ represents the expected number of transactions in a time interval
+  - The number of orders made by a customer in a given time period (i.e. month, year, etc.) comes from this poisson distribution
+- Each customer can have a different λ (i.e. transaction rates are heterogeneous across all customers)
+  - Here, the heterogeneity in λ is assumed to follow a Gamma distribution
+- After each purchase, each customer has an α probability of churning (i.e. never buying again)
+  - Here, α is assumed to follow a Geometric distribution
+  - Roughly, a customer's probability of churning decreases as a customer places more orders
+- Each customer can have a different α (i.e. probabilities of churning are heterogenous across all customers)
+  - Here, the heterogeneity in α is assumed to follow a Beta distribution
+
+To help illustrate these parameters, let's imagine every customer (who are repeat purchases) has two coins. In particular, each customer flips a coin every day to see if they purchase or not (i.e. a purchase coin). After this first coin is flipped, each customer will flip their second coin. This second coin will decide whether going forward they die or not (i.e. a drop-out coin). Once a customer flips heads on the die coin, then they will stop flipping both coins and exit the experiment.
+
+To tie in the model parameters with our analogy, the number of times our first coin (i.e. purchase coin) landed on heads (or the customer purchased) in a given period (e.g. month, year, etc.) is our transaction rate λ, which determines the shape of their own Poisson distribution. The heterogeneity in transaction rates across different customers follows a Gamma distribution. Each customer's second coin has a different probability α of landing on heads, or the customer dropping out and never buying again. Each customer's chance of dropping out is represented by their own α parameter, which determines the shape of their own Geometric distribution. The heterogeneity in drop-out probabilities across different customers follows a Beta distribution.
+
+The CLV of customers can be estimated using ML models, such as boosting methods, random forests, LSTMs, etc. However, the probabilistic models usually produce similar out-of-sample accuracies and do as good of a job at estimating our variables of interest, while requiring fewer features and customer data. As an additional point, keep in mind most ML models require labels. If we're truly interested in predicting CLVs in a non-contractual company, then it's impossible to ever retrieve actual CLVs for each customer, since we don't know when they actually churn.
+
+Again, for a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations). For high-level intuitions behind each parameter, refer to [this Medium article](https://towardsdatascience.com/predicting-customer-lifetime-value-with-buy-til-you-die-probabilistic-models-in-python-f5cac78758d9). For comprehensive descriptions of the parameters used in modeling CLV, refer to [Bruce Hardie's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf).
 
