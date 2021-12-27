@@ -7,7 +7,7 @@ the future cash flows attributed to a customer relationship, or how much a custo
 3. Improving the CLV of existing, retained customers
 4. Decreasing the riskiness of the customer portfolio
 
-Marketing departments shouldn't lose sight of these higher-level, fundamental objectives. Some companies will fail to address these objectives by assigning a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
+Marketing departments shouldn't lose sight of these higher-level, fundamental objectives. Specifically, companies should invest in the three major customer-based strategies: customer acquisition, customer retention, and customer development. Some companies will fail to address these objectives by assigning a single, average value to represent the CLV of all of their customers. By doing this, those companies are assuming every customer behaves and is worth the same.
 
 # CLV Assumptions and Principles
 
