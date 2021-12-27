@@ -107,18 +107,18 @@ The `RR` metric represents the percentage of the previous year's buyers who buy 
 
 For more information about the accuracy of this small set of customer-based corporate valuation metrics, refer to [Dan McCarthy's slides from his presentation at Wharton](https://scientistcafe.com/CIRUG/2017_07_24ASA_TalkDanMcCarthy.pdf). For a deeper understanding of the math behind these metrics and examples of companies using these metrics in practice, refer to [McCarthy and Fader's paper](https://deliverypdf.ssrn.com/delivery.php?ID=217116104122089025069125121097076103121046070053091056099116021109091027113116024081057056103059050003021087120021001116093091000085032086058068011118113065000099106025080050118126124103092083099108005018031018083106115029070123004010092120067092069115&EXT=pdf&INDEX=TRUE). For a deeper dive into modeling customer behavior for both transactional and non-transactional businesses, refer to [McCarthy's dissertation](https://repository.upenn.edu/cgi/viewcontent.cgi?article=4247&context=edissertations).
 
-# Implementing CBCV with Forecasting Models
+# Implementing CLV Models
 
-- FCF = (R(1 − VC) − FC − CAC × A)(1 − TR)
-- FCF is future cash flows
-- Here, R is weekly revenue
-  - This can be estimated by calculating CLV for all customers then summing it up
-  - E[RLV] = average 
-- Here, VC is variable costs
-- Here, FC is fixed costs
-- Here, CAC is customer acquisition cost per customer
-- Here, A is gross acquisitions
-- Here, TR is tax rate
+As a general rule, modeling aggregate customer behavior in a non-contractual setting is a solved problem if the modeler has access to individual-level customer data. If individual-level customer data isn’t available to the model for evaluating a non-contractual business, [Fader and McCarthy](https://deliverypdf.ssrn.com/delivery.php?ID=776114008100075122082093005101119014038018014015006038127117098011069080076116004007106099010022103035124021028124014107086028126008014016039097081012116113097098123041011057120102126103076114007028069126094121085068106006126005103099117092085113125069&EXT=pdf&INDEX=TRUE) recommend following a CBCV model (or using their 6 proposed customer metrics) instead. For a more in-depth analysis about the math behind their well-tested probabilistic models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf) about their proposed CLV models in a non-contractual setting.
 
-For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For an interesting high-level article outlining McCarthy's overall CBCV approach, refer to [this article](https://hbr.org/2020/01/how-to-value-a-company-by-analyzing-its-customers).
+```python
+var u = 1
+```
+DERT = (expected orders from now) x (probability customer is alive at a given time) x (discount rate)
+    - E[RLV] = (expected average spend per order) x DERT
+    - E[PAV] = E[RLV] + (value of old orders)
+    - E[CLV] = E[PAV] - CAC
+    - CE = sum of all CLVs
+
+For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For slides about the high-level components included in these probabilistic CLV models, refer to [Hardie and Fader's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf). For more intuition behind the mathematical componented included in the models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf).
 
