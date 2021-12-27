@@ -111,14 +111,43 @@ For more information about the accuracy of this small set of customer-based corp
 
 As a general rule, modeling aggregate customer behavior in a non-contractual setting is a solved problem if the modeler has access to individual-level customer data. If individual-level customer data isn’t available to the model for evaluating a non-contractual business, [Fader and McCarthy](https://deliverypdf.ssrn.com/delivery.php?ID=776114008100075122082093005101119014038018014015006038127117098011069080076116004007106099010022103035124021028124014107086028126008014016039097081012116113097098123041011057120102126103076114007028069126094121085068106006126005103099117092085113125069&EXT=pdf&INDEX=TRUE) recommend following a CBCV model (or using their 6 proposed customer metrics) instead. For a more in-depth analysis about the math behind their well-tested probabilistic models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf) about their proposed CLV models in a non-contractual setting.
 
-```python
-var u = 1
+In a non-contractual setting, CLV is unknown and unobservable when a customer is active, since customers don't raise their hand and alert a firm about when they're ready to churn. Note, we can only estimate CLV, since the true CLV values are unobservable. Mathematically, our expected values of CLV are denoted as E[CLV].
+
+When calculating CLV estimates, we'll need to compute the [discounted expected residual transactions (or DERT) of a customer](https://www.rdocumentation.org/packages/BTYD/versions/2.4.2/topics/pnbd.DERT), which can be done in R using the BTYD package coauthored by both Peter Fader and Daniel McCarthy. DERT is an estimate dependent on two additional estimates: the estimated customer-level expected orders from now and the estimated probability of a customer being alive at a given moment. Mathematically, the formula for **DERT** is given below, where **EO** is the expected orders from now, **EPC** is the expected probability of a customer being alive at a given moment, and **DR** is the discount rate.
+
 ```
-DERT = (expected orders from now) x (probability customer is alive at a given time) x (discount rate)
-    - E[RLV] = (expected average spend per order) x DERT
-    - E[PAV] = E[RLV] + (value of old orders)
-    - E[CLV] = E[PAV] - CAC
-    - CE = sum of all CLVs
+DERT = EO x EPC x DR
+```
+
+Once the estimates within the DERT computation are calculated and DERT is finally computed, then we can calculate the expected residual lifetime value (or RLV). To be clear, **RLV** is unobservable and unknown in a non-contractual setting when a customer is still active, so we'll need to calculate the E[RLV]. The formula for E[RLV] is given below, where **ESO** is the expected customer-level average spend per order:
+
+```
+E[RLV] = ESO x DERT
+```
+
+In general, the CLV metric is useful when focusing on acquisition, whereas the RLV metric is useful when focusing on retention. Since, RLV only includes future variable profits and excludes previous profits. CLV also includes the cost of acquiring the customer (or **CAC**). Specifically, the formula for the expected post aquisition value (or **PAV**) is given below, where **VO** is the value of old orders:
+
+```
+E[PAV] = E[RLV] + VO
+```
+
+Lastly, **CLV** represents PAV minus costs of acquisition. Here, the sum of all customers' CLV is known and referred to as customer equity (or CE).
+
+```
+E[CLV] = E[PAV] - CAC
+```
+
+In many cases, firms use **CE** to represent financial value of the customer base, which typically is the most significant, if not entire, portion of a firm's worth. More specifically, CE is is a valuation measure that is an estimate of a company’s valuation in dollars. When calculating CE, it isn't entirely correct to incorporate the CLV of existing customers, since this adds the total historical value of those existing customers. In truth, any historical spend is already sunk. This issue is easily remedied by defining CE to be equal to the RLV of existing (or retained) customers plus the net present value of the CLV of all future customers who haven't been acquired yet. The formula for CLV is given below:
+
+```python
+CE = 0
+
+for c in customers:
+  if c.is_existing_customer:
+    CE = CE + c.RLV
+  else:
+    CE = CE + c.CLV
+```
 
 For a clearer defintion about the differences between residual lifetime values, customer lifetime values, and other customer-based metrics, refer to [McCarthy's slides](https://www.dropbox.com/s/xjak7pezn6i9m06/CLV%20framework.pptx). For slides about the high-level components included in these probabilistic CLV models, refer to [Hardie and Fader's slides](http://www.brucehardie.com/talks/ho_cba_tut_art_09.pdf). For more intuition behind the mathematical componented included in the models, refer to [Hardie and Fader's paper](http://www.brucehardie.com/papers/020/fader_et_al_mksc_10.pdf).
 
