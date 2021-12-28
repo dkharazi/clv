@@ -61,6 +61,8 @@ For a deeper understanding of the forecasts and underlying CLVs at Wayfair, refe
 
 # Applications of CLV
 
+### Cross-Functional CLV Use-Cases
+
 There are many use-cases for CLV to be used across any type of business. The following are only a few use-cases that can provide immediate impact to a company:
 - Valuating channels or cohorts of customers by comparing average CLV against average CAC for a particular acquisition channel or cohort of customers
 - Determining more meaningful customer segments based on unique purchasing behavior or CLV estimates
@@ -70,7 +72,8 @@ There are many use-cases for CLV to be used across any type of business. The fol
 - Improving acquisitions of customer cohorts
 - Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
 
-# Types of Acquisition Strategies and Tactics
+### Types of Acquisition Strategies and Tactics
+
 - Direct-broad acquisition approach
 - Direct-selective acquisition approach
 - Indirect-broad acquisition approach
@@ -78,7 +81,7 @@ There are many use-cases for CLV to be used across any type of business. The fol
 - An approach is direct when the company considers the customer a known prospect, whereas an approach is indirect when the company considers the customer an unknown prospect
 - An approach is broad when the strategy isn't meant to be targeted on a certain cohort of customers, whereas an approach is selective when the strategy is meant to be targeted on a certain cohort of customers
 
-# Types of Retention Strategies and Tactics
+### Types of Retention Strategies and Tactics
 
 # Sample CLV-Related Metrics
 In the early stages of tracking customers' CLV, it's important to monitor certain metrics when focusing on customer acquisition, retention, and development. The following metrics are examples of useful metrics related to CLV, but there could be many more estimates:
