@@ -78,22 +78,23 @@ There are many use-cases for CLV to be used across any type of business. The fol
 
 #### Types of Acquisition Strategies and Tactics
 
+In order to grow the CLV of customers, a company must first acquire a sizable number of high-value customers. The *80:20 rule* states that 80% of a firm's future profits come from just 20% of their existing customers. There are slight deviations and exceptions to this rule, depending on a company's industry, stage in its lifecycle, and many other factors. For the most part, this rule seems to be seen in practice for more mature companies. Acquisition strategies are important because the company is then able to grow the size of their customer base, leading to an increase in the number of customers covered by this figure of 20%. Also, a company has the opportunity to decide who is included in that 20 percent of customers, and they likely will want to ensure high-value customers are included in this percentage of customers or even grow the CLV of this cohort of customers.
+
+There are four general categories of tactics and strategies used for acquiring customers:
 - Direct-broad acquisition approach
-  - Targets specific customers, but little is known about these potential leads
-  - Maybe, names, addresses, etc. might be provided, but no other information is known
-  - E.g. these leads could be reached broadly through telemarketing, canvassing, Google marketing, etc.
 - Direct-selective acquisition approach
-  - This usually involves look-alike modeling or scoring certain segments
-  - E.g. customers who opt-in to emails or receive campaigned without purchases
 - Indirect-broad acquisition approach
-  - This usually involves coming up with generalized marketing messages for a more general audience (casting the widest net to reach as many unidentifiable customers as possible)
-  - E.g. tv ads, billboards, word-of-mouth, etc.
 - Indirect-selective acquisition approach
-  - This usually involves offering referrals to only high-value customers (or other targeted customer cohorts)
-  - E.g. referrals
-- An approach is direct when the company considers the customer a known prospect, whereas an approach is indirect when the company considers the customer an unknown prospect
-- An approach is broad when the strategy isn't meant to be targeted on a certain cohort of customers, whereas an approach is selective when the strategy is meant to be targeted on a certain cohort of customers
-- We live in a time when specific information about individual customers is easy to obtain and analyze and is inexpensive to store (as we’ll discuss in chapter 4). This means the world is becoming more direct all the time. 
+
+In general, a direct tactic simply involves a company reaching out to a known customer prospect directly and individually, whereas an indirect tactic involves a company reaching out to an unknown customer prospect indirectly. A broad strategy refers to a generalized approach for acquiring a customers, whereas a selective strategy refers to a more targeted approach. Said another way, an approach is broad when the strategy isn't meant to be targeted on a certain cohort of customers, whereas an approach is selective when the strategy is meant to be targeted on a certain cohort of customers. Today, firms are able to obtain and analyze more specific information about individual customers than ever before. Also, storing this information is incredibly cheap compared to previous years. As a result, the world is becoming more direct as time goes on.
+
+A direct-broad acquisition approach will directly target individual customer leads in the broad customer audience, where some or very little information is known about them. For example, maybe the potential lead provided their phone number or email address in a previous email campaign. This approach aims to reach customers broadly through telemarketing, canvassing, Google marketing, etc.
+
+A direct-selective acquisition approach will directly target individual customer leads in a particular segment of the customer audience, where some information is known about them. For example, a company may have little information on these potential leads, but the information would be enough to segment them and apply more targeted approaches through their preferred channel. Usually, this approach involves some customer segmentation or look-alike modeling to be done beforehand.
+
+An indirect-broad acquisition approach will indirectly target customer leads in the broad customer audience, where almost no information is known about them. This approach usually involves coming up with generalized marketing messages for a more mainstream audience. In other words, a company is casting the widest net to reach as many unidentifiable customers as possible. Telivision ads, billboards, and word-of-mouth are all examples of indirect-broad acquisition approaches.
+
+An indirect-selective acquisition approach will indirectly target customer leads in a particular segment of the customer audience, where almost no information is known about them. For example, this approach could include offering referrals to only high-value customers or other targeted customer cohorts. Offering referrals to any customer may be considered an indirect-broad aqcuisition approach, instead. 
 
 #### Types of Retention Strategies and Tactics
 
