@@ -100,6 +100,12 @@ Again, most of this research has been done by Peter Fader and Bryce Hardie, whic
 
 #### Problems with Basing Acquisition Strategies on Demographics
 
+- Usually, variation of CLV within demographic buckets is far greater than the differences across them. Sure, the mean CLV across buyers in a particular category may be higher for, say, older people versus younger people, but these differences—even if statistically significant—are relatively inconsequential compared with the vast differences within each group. Means are meaningless unless you also take the variance into account, and customer centricity is a celebration of variance. 
+- Personas are a much more holistic concept than straight demographics, attitudes, or even behavioral metrics. What’s not to like about the idea of being able to put a face to a customer segment? It’s easy to think of marketing to Harriet Housewife and to compare her needs with those of Working Wanda or Carpool Carla. Managers just love it; there’s something intuitive about putting these cartoon characters up on a whiteboard and thinking about which ones you want to focus your acquisition efforts on. 
+- As a result, managers and marketers behave as if these personas are a reasonable and adequate representation of their customer base. But these personas are essentially just shorthand for the demographic data they already have—demographics on steroids, so to speak. 
+- From a researcher’s perspective, personas are another way of categorizing people based on surface-level characteristics that, in most cases, don’t have a whole lot to do with a customer’s true future value. If you want to actually gain insights into what your customer’s spending habits are, how much value they contribute to your company, or any other revenue-centric data point, demographics are the wrong tool. That’s a job for CLV. 
+- Of course, even in CLV analysis, we still must profile our segments. But a customer-centric approach to segmentation is polar opposite to that of traditional marketers, who tend to start with predetermined segments (often based on demographics/personas) and ask, “Which ones seem most attractive for selling our products?” By contrast, the customer-centric marketer starts with individual-level CLVs and then asks, What are the characteristics that make our top customers different from our bottom customers? This is a key distinction in mindset as well as practice. 
+
 #### Types of Retention Strategies and Tactics
 
 - customer development
