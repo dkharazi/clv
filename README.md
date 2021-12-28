@@ -96,7 +96,11 @@ An indirect-broad acquisition approach will indirectly target customer leads in 
 
 An indirect-selective acquisition approach will indirectly target customer leads in a particular segment of the customer audience, where almost no information is known about them. For example, this approach could include offering referrals to only high-value customers or other targeted customer cohorts. Offering referrals to any customer may be considered an indirect-broad aqcuisition approach, instead. 
 
+Again, most of this research has been done by Peter Fader and Bryce Hardie, which is outlined in [Peter Fader's Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/). For more details about customer-centric strategies, assumptions, and findings, refer to Fader's playbook.
+
 #### Types of Retention Strategies and Tactics
+
+Again, most of this research has been done by Peter Fader and Bryce Hardie, which is outlined in [Peter Fader's Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/). For more details about customer-centric strategies, assumptions, and findings, refer to Fader's playbook.
 
 # Sample CLV-Related Metrics
 In the early stages of tracking customers' CLV, it's important to monitor certain metrics when focusing on customer acquisition, retention, and development. The following metrics are examples of useful metrics related to CLV, but there could be many more estimates:
