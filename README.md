@@ -98,6 +98,8 @@ An indirect-selective acquisition approach will indirectly target customer leads
 
 Again, most of this research has been done by Peter Fader and Bryce Hardie, which is outlined in [Peter Fader's Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/). For more details about customer-centric strategies, assumptions, and findings, refer to Fader's playbook.
 
+#### Problems with Basing Acquisition Strategies on Demographics
+
 #### Types of Retention Strategies and Tactics
 
 - customer development
