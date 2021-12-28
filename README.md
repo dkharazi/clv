@@ -61,8 +61,6 @@ For a deeper understanding of the forecasts and underlying CLVs at Wayfair, refe
 
 # Applications of CLV
 
-### Cross-Functional CLV Use-Cases
-
 There are many use-cases for CLV to be used across any type of business. The following are only a few use-cases that can provide immediate impact to a company:
 - Valuating channels or cohorts of customers by comparing average CLV against average CAC for a particular acquisition channel or cohort of customers
 - Determining more meaningful customer segments based on unique purchasing behavior or CLV estimates
