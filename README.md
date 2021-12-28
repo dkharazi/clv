@@ -73,9 +73,18 @@ There are many use-cases for CLV to be used across any type of business. The fol
 #### Types of Acquisition Strategies and Tactics
 
 - Direct-broad acquisition approach
+  - Targets specific customers, but little is known about these potential leads
+  - Maybe, names, addresses, etc. might be provided, but no other information is known
+  - E.g. these leads could be reached broadly through telemarketing, canvassing, Google marketing, etc.
 - Direct-selective acquisition approach
+  - This usually involves look-alike modeling or scoring certain segments
+  - E.g. customers who opt-in to emails or receive campaigned without purchases
 - Indirect-broad acquisition approach
+  - This usually involves coming up with generalized marketing messages for a more general audience (casting the widest net to reach as many unidentifiable customers as possible)
+  - E.g. tv ads, billboards, word-of-mouth, etc.
 - Indirect-selective acquisition approach
+  - This usually involves offering referrals to only high-value customers (or other targeted customer cohorts)
+  - E.g. referrals
 - An approach is direct when the company considers the customer a known prospect, whereas an approach is indirect when the company considers the customer an unknown prospect
 - An approach is broad when the strategy isn't meant to be targeted on a certain cohort of customers, whereas an approach is selective when the strategy is meant to be targeted on a certain cohort of customers
 
