@@ -128,7 +128,9 @@ In general, the CLV metric is useful when focusing on acquisition, whereas the R
 E[PAV] = E[RLV] + VO
 ```
 
-Lastly, **CLV** represents PAV minus costs of acquisition. Again, the CLV metric is useful when focusing on acquisition and less useful when focusing on retention, since the goal of retention strategies is to increase what remaining value can be extended. Hence, why we prefer RLV for retention strategies.. Here, the sum of all customers' CLV is known and referred to as customer equity (or CE).
+In other words, PAV just refers to CLV before deducting CAC. In general, PAV determines the upper bound on how to spend on CAC. Then, a positive CLV indicates a given customer is profitable, whereas a negative CLV indicates a given customer isn't profitable and likely isn't worth acquiring. For monitoring purposes, typically it's more useful to track PAV, CLV, and CAC separately, since ratios can sometimes be misleading in this case. 
+
+Lastly, **CLV** represents PAV minus costs of acquisition. Again, the CLV metric is useful when focusing on acquisition and less useful when focusing on retention, since the goal of retention strategies is to increase what remaining value can be extended. Hence, why we prefer RLV for retention strategies. Here, the sum of all customers' CLV is known and referred to as customer equity (or CE).
 
 ```
 E[CLV] = E[PAV] - CAC
