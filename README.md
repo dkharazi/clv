@@ -100,6 +100,17 @@ Again, most of this research has been done by Peter Fader and Bryce Hardie, whic
 
 #### Types of Retention Strategies and Tactics
 
+- customer development
+- customer retention
+- Cross-selling and up-selling
+  - Retention refers to holding on to the customers and the value they have (defense)
+    - This is more of a defensive strategy
+  - Development refers to increasing the values of the customers we have
+    - This is more of an offensive strategy
+  - Acquisition refers to getting customers who haven’t shopped with us before
+  - Reactivation refers to gaining back customers who’ve already churned
+- If we’re wanting to develop high-value customers, then we’d offer them premium offerings. If we’re wanting to retain high-value customers, then we’d do strategic account management. If we’re wanting to develop low-value customers, then we’d do a loyalty program. If we’re wanting to retain low-value customers, then we’d focus on providing better customer service.
+
 Again, most of this research has been done by Peter Fader and Bryce Hardie, which is outlined in [Peter Fader's Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/). For more details about customer-centric strategies, assumptions, and findings, refer to Fader's playbook.
 
 # Sample CLV-Related Metrics
