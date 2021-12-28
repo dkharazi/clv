@@ -93,6 +93,7 @@ There are many use-cases for CLV to be used across any type of business. The fol
   - E.g. referrals
 - An approach is direct when the company considers the customer a known prospect, whereas an approach is indirect when the company considers the customer an unknown prospect
 - An approach is broad when the strategy isn't meant to be targeted on a certain cohort of customers, whereas an approach is selective when the strategy is meant to be targeted on a certain cohort of customers
+- We live in a time when specific information about individual customers is easy to obtain and analyze and is inexpensive to store (as we’ll discuss in chapter 4). This means the world is becoming more direct all the time. 
 
 #### Types of Retention Strategies and Tactics
 
