@@ -63,9 +63,15 @@ For a deeper understanding of the forecasts and underlying CLVs at Wayfair, refe
 
 There are many use-cases for CLV to be used across any type of business. The following are only a few use-cases that can provide immediate impact to a company:
 - Valuating channels or cohorts of customers by comparing average CLV against average CAC for a particular acquisition channel or cohort of customers
-- Determining more meaningful customer segments based on unique purchasing behavior or CLV estimates
-- Designing more forward-looking tests for determining changes in CLV or future lifts for cohorts
+- Targeting more meaningful customer segments based on CLV estimates or other unique purchasing behaviors
+- Designing more forward-looking A/B tests by observing changes in CLV or future lifts for test and treatment groups
 - Applying more effective customer targeting strategies (i.e. premium offerings and loyalty programs) to low-value or high-value customers based on CLV
+- Create marketing strategies for certain customer cohorts based on CLV
+- Develop customer segments based on CLV
+- Apply targeting forecasting and customer evolution for particular customer segments based on CLV
+- Create different communication, services and loyalty programs based on CLV
+- Awake any *non-active* customers based on CLV
+- Estimate total customer equity
 - Improving retention of future customer cohorts
 - Improving acquisitions of customer cohorts
 - Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
