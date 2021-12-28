@@ -70,7 +70,7 @@ There are many use-cases for CLV to be used across any type of business. The fol
 - Improving acquisitions of customer cohorts
 - Evaluating histogram of binned CLVs for recent customers relative to binned CLVs for long-time customers
 
-##### Types of Acquisition Strategies and Tactics
+#### Types of Acquisition Strategies and Tactics
 
 - Direct-broad acquisition approach
 - Direct-selective acquisition approach
