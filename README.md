@@ -120,13 +120,21 @@ One of the primary goals of customer development is to increase the CLV of custo
 
 In particular, a customer adding fries to their order is an example of cross-selling. For online retailers, a real-world example of cross-selling is the use of a recommendation engine, which will recommend similar products to a customer. On the other hand, a customer supersizing their order is an example of up-selling. For streaming services, a real-world example of up-selling is the offering of paid subscription service that is ad-free to customers who have a free-tier account with ads.
 
-Retention refers to holding on to the customers and the value they have (defense)
-    - This is more of a defensive strategy
-  - Development refers to increasing the values of the customers we have
-    - This is more of an offensive strategy
-  - Acquisition refers to getting customers who haven’t shopped with us before
-  - Reactivation refers to gaining back customers who’ve already churned
-- If we’re wanting to develop high-value customers, then we’d offer them premium offerings. If we’re wanting to retain high-value customers, then we’d do strategic account management. If we’re wanting to develop low-value customers, then we’d do a loyalty program. If we’re wanting to retain low-value customers, then we’d focus on providing better customer service.
+At a high-level point of view, there are 4 general stages of the customer lifecycle: the customer acquisition stage, customer retention stage, customer development stage, and customer reactivation stage. The customer retention and development stages can work in tandem once a customer is acquired. More specifically, there are 4 different retention and development strategies that can be used to target certain types of customers:
+- Offensive approaches on high-value customers
+- Offensive approaches on low-value customers
+- Defensive approaches on high-value customers
+- Defensive approaches on low-value customers
+
+Offensive strategies refer to strategies used to develop customers into higher value customers (i.e. customer development stage), whereas defensive strategies refer to strategies only used to retain customers and maintain the value they already have at the company (i.e. customer retention stage).
+
+An example of an offensive approach suitable for high-value customers is a premium offering. Examples of a premium offering include Amazon Prime or LinkedIn Premium. In both cases, YoY revenue grew by huge amounts (i.e. LinkedIn premium eventually made up 20% of total revenue), so there is evidence of good premium offerings working for high-value customers. An example of an offensive approach suitable for low-value customers is a loyalty program. For example, this could look like a *get your 10th purchase free* program. This strategy is useful for squeezing a little more value out of low- or even mid- value customers.
+
+There has been evidence of this strategy marginally increasing the spend and number of orders for lower value segments of customers, which is important. However, these increases are only marginal for most loyalty programs, since the incentives of a loyalty program usually aren't that great. Offering an already heavy buyer a free order on the 10th purchase isn't really going to incentivize that heavy buyer to change their purchasing behavior. As a result, there hasn't been much evidence of many loyalty programs turning high-value customers into platinum-value customers.
+
+The main difference between a loyalty program and premium offering is how much the extra features are changing the overall customer experience with the company. For example, only a few extra incentives are being offered to the customers in a loyalty program, which doesn't really change their overall experience with shopping and engaging with the company. However, LinkedIn premium improves the entire engagement experience for the customer. Here, a key point is that the features in a premium offering wouldn't really be used or change the experience for lower value customers, so the company isn't really taking anything away from the overall experience of each customer.
+
+An example of a defensive approach suitable for high-value customers is strategic account management. An example of an account manager is someone who focuses on educating their customers rather than selling to them. There is a great deal of evidence (see Autodesk's story) that long-run maintenance, rather than offensive value creating, can be a more profitable approach if retaining customers is a better strategy than developing customers at a given time. Lastly, an example of a defensive approach suitable for low-value customers is customer service. The goal of a defensive strategy for low-value customers is to be more reactive than proactive while keeping costs low. Since low-value customers are the majority of any company's customers in almost every case, it's important to invest in quality customer service, since their suggestions can improve the customer experience for the majority of customers.
 
 Again, most of this research has been done by Peter Fader and Bryce Hardie, which is outlined in [Peter Fader's Customer Centricity Playbook](https://wsp.wharton.upenn.edu/book/customer-centricity-playbook/). For more details about customer-centric strategies, assumptions, and findings, refer to Fader's playbook.
 
