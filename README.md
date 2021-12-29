@@ -112,10 +112,15 @@ Most of this research has been done by Peter Fader and Bryce Hardie, which is ou
 
 #### Types of Retention Strategies and Tactics
 
-- customer development
-- customer retention
-- Cross-selling and up-selling
-  - Retention refers to holding on to the customers and the value they have (defense)
+After a company has acquired a customer, it must shift its focus to maintaining and even growing that customer's CLV for as long as possible. In other words, a company can apply two different tactics on active customers: custom retention and customer development. Here, customer retention tactics attempt to ensure that an active customer stays, whereas customer development tactics attempt to ensure that an active customer increases the CLV.
+
+One of the primary goals of customer development is to increase the CLV of customers. Generally, there are two strategies for a company to develop its customers: cross-selling and up-selling. In other words, there are two questions we can ask customers if we're interested in developing them:
+- Do you want fries with that?
+- Do you want to supersize it?
+
+In particular, a customer adding fries to their order is an example of cross-selling. For online retailers, a real-world example of cross-selling is the use of a recommendation engine, which will recommend similar products to a customer. On the other hand, a customer supersizing their order is an example of up-selling. For streaming services, a real-world example of up-selling is the offering of paid subscription service that is ad-free to customers who have a free-tier account with ads.
+
+Retention refers to holding on to the customers and the value they have (defense)
     - This is more of a defensive strategy
   - Development refers to increasing the values of the customers we have
     - This is more of an offensive strategy
