@@ -37,19 +37,19 @@ Regarding the second principle, an average CLV shouldn't be generalized across a
 
 For example, customer 1 and customer 2 have very different purchasing behaviors based on their order recency and frequency in the illustration below. Notice, customer 2 has a much higher likelihood of churning compared to customer 1. If we gained the power of being able to see into the future and look at each customer's actual purchases, then we'll see customer 1 should have a higher estimated CLV compared to customer 2. This point should help illustrate how each customer should be treated differently with a different estimated CLV.
 
-![CLV Illustration 1](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv1.svg)
+![CLV Illustration 1](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/img/clv1.svg)
 
 Regarding the third principle, estimating the value of our customers solely based on historical sales shouldn't be our main focus. Instead, it's more interesting to focus on CLV, since it's a future-looking estimate of spend, instead of historical sales. To illustrate this point, notice how customer 1 and customer 2 have different order recencies in the illustration below. More specifically, customer 1 has more purchases compared to customer 2 historically, but customer 2 has purchased more frequently and recently compared to customer 1. Even though both of these customers may be considered high value customers, customer 2 has a higher CLV if we regained our power to look into the future at each customer's actual purchases.
 
-![CLV Illustration 2](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv2.svg)
+![CLV Illustration 2](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/img/clv2.svg)
 
 # Wayfair: a CLV Case Study 
 
 If our CLV estimates are accurate enough, we can use those CLV estimates to measure the value of our acquired customers across their lifetimes, rather than the hisorical spend of our customers. This is an important concept for determining whether our acquired customers should be considered high-value or low-value customers. For example, [Peter Fader](https://www.youtube.com/watch?v=0iLQCNYdNb4&ab_channel=TalksatGoogle) and [Daniel McCarthy](https://twitter.com/d_mccar/status/1376564874713702408) have both mentioned Wayfair's acquisitions are growing too fast without retaining repeat-buyers or high-value customers. In other words, they're acquiring a lot of low-value customers, and they haven't established enough of a base of repeat buyers, who they can rely on when their acquisitions level off. As a result, their revenue is expected to drop once acquisitions reach their peak, which is illustrated in the following figure.
 
-![Wayfair Acquisition Costs](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv3.png)
+![Wayfair Acquisition Costs](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/img/clv3.png)
 
-![Wayfair Forecasted Revenues](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/clv4.png)
+![Wayfair Forecasted Revenues](https://raw.githubusercontent.com/dkharazi/customer-centricity/main/img/clv4.png)
 
 Those forecasts didn't account for the occurrence of the pandemic, causing acquistions to continue to grow even more rapidly than expected. Since the start of the COVID-19 pandemic, competitors have removed their furniture supply from the market [by either closing their brick-and-mortar stores or declaring bankruptcy](https://www.cnbc.com/2020/04/06/wayfair-shares-surge-37percent-as-coronavirus-drives-sales-of-office-furniture.html), leading to even greater levels of acquired customers for Wayfair.
 
